@@ -1,9 +1,185 @@
 <!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-  			<a href="page2.html" target="_self">Link to page 2</a>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>H O M E P A G E</title>
+		<style>
+			/* Basic reset and font settings */
+			* {
+				box-sizing: border-box;
+				margin: 0;
+				padding: 0;
+				font-family: Arial, sans-serif;
+			}
 
-</body>
+			/* Center the main container on the page */
+			body {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				min-height: 100vh;
+				background-color: #f5f7fa;
+			}
+
+			/* Outer container box styling */
+			.outer-box {
+				background-color: #ffffff;
+				width: 100%;
+				max-width: 1000px;
+				padding: 20px;
+				border-radius: 10px;
+				box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+			}
+
+			/* Grid container styles */
+			.grid-container {
+				display: grid;
+				grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+				gap: 15px;
+				margin-top: 20px;
+			}
+
+			/* Square grid item styling */
+			.grid-item {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				background-color: #E5E4E2;
+				color: white;
+				padding: 15px;
+				border-radius: 8px;
+				text-align: center;
+				text-decoration: none;
+				font-weight: bold;
+				aspect-ratio: 1; /* Ensures each item is square */
+				transition: transform 0.3s, background-color 0.3s ease;
+			}
+
+			/* Content inside each grid item */
+			.item-content {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				gap: 8px;
+			}
+
+			.item-title {
+				font-size: 1.2rem;
+				font-weight: bold;
+				margin-bottom: 5px;
+				color: #301934;
+			}
+
+			.item-description {
+				font-size: 0.75rem;
+				color: #483248;
+			}
+
+			/* Hover effect */
+			.grid-item:hover {
+				background-color: #C0C0C0;
+				transform: translateY(-3px);
+			}
+
+			/* Responsive adjustments */
+			@media (max-width: 600px) {
+				.outer-box {
+					width: 90%;
+					padding: 15px;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="outer-box">
+			<h2 style="text-align: center; color: #333">
+				Select Page
+			</h2>
+			<div class="grid-container">
+				<a href="page/Temperature/Temperature.html" class="grid-item" draggable="false">
+					<div class="item-content">
+						<div class="item-title">Temperature Conversion</div>
+						<div class="item-description">
+							Converts between Celsius, Fahrenheit, Kelvin
+						</div>
+					</div>
+				</a>
+				<a href="page/Length/Length.html" class="grid-item" draggable="false">
+					<div class="item-content">
+						<div class="item-title">Page 1</div>
+						<div class="item-description">
+							Not now
+						</div>
+					</div>
+				</a>
+				<a href="page2.html" class="grid-item" draggable="false">
+					<div class="item-content">
+						<div class="item-title">Page 2</div>
+						<div class="item-description">
+							Not now
+						</div>
+					</div>
+				</a>
+				<a href="page3.html" class="grid-item" draggable="false">
+					<div class="item-content">
+						<div class="item-title">Page 3</div>
+						<div class="item-description">
+							Not now
+						</div>
+					</div>
+				</a>
+				<a href="page4.html" class="grid-item" draggable="false">
+					<div class="item-content">
+						<div class="item-title">Page 4</div>
+						<div class="item-description">
+							Not now
+						</div>
+					</div>
+				</a>
+				<a href="page5.html" class="grid-item" draggable="false">
+					<div class="item-content">
+						<div class="item-title">Page 5</div>
+						<div class="item-description">
+							Not now
+						</div>
+					</div>
+				</a>
+				<a href="page6.html" class="grid-item" draggable="false">
+					<div class="item-content">
+						<div class="item-title">Page 6</div>
+						<div class="item-description">
+							Not now
+						</div>
+					</div>
+				</a>
+				<a href="page7.html" class="grid-item" draggable="false">
+					<div class="item-content">
+						<div class="item-title">Page 7</div>
+						<div class="item-description">
+							Not now
+						</div>
+					</div>
+				</a>
+				<a href="page8.html" class="grid-item" draggable="false">
+					<div class="item-content">
+						<div class="item-title">Page 8</div>
+						<div class="item-description">
+							Not now
+						</div>
+					</div>
+				</a>
+				<a href="page9.html" class="grid-item" draggable="false">
+					<div class="item-content">
+						<div class="item-title">Page 9</div>
+						<div class="item-description">
+							Not now
+						</div>
+					</div>
+				</a>
+				<!-- Add more items as needed -->
+			</div>
+		</div>
+	</body>
 </html>

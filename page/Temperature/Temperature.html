@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Temperature Converter</title>
+		<link rel="stylesheet" href="style.css" />
+		<script src="script.js" defer></script>
+	</head>
+	<body>
+		<div class="back-box">
+			<a href="../../index.html" class="back-button"> Go Back </a>
+		</div>
+
+		<!-- Temperature Converter Section -->
+		<div class="outer-box">
+			<b>
+				<h1 style="margin-bottom: 25px">Temperature Converter</h1>
+			</b>
+
+			<div class="inner-box">
+				<div class="input-box" id="div-Length A">
+					<div class="name-box">Length A</div>
+					<div style="display: table;">
+						<input
+							type="text"
+							autocomplete="off"
+							placeholder="Enter Length A..."
+							class="class-input"
+							id="id-Length A"
+							oninput="UpdateTemperature()"
+							onkeydown="return FixNumeric(event)"
+						/>
+						<div class="input-unit">°C</div>
+					</div>
+				</div>
+				<div class="input-box" id="div-Fahrenheit">
+					<div class="name-box">Fahrenheit</div>
+					<div>
+						<input
+							type="text"
+							autocomplete="off"
+							placeholder="Enter Fahrenheit..."
+							class="class-input"
+							id="id-Fahrenheit"
+							oninput="UpdateTemperature()"
+							onkeydown="return FixNumeric(event)"
+						/>
+						<div class="input-unit">°F</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</body>
+</html>
